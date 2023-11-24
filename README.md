@@ -1,4 +1,4 @@
-![image](https://github.com/YoungWoon-Go/OSS_project/assets/144092472/00c5b790-9700-41b8-a52f-bf4f0b544ce7)# 라즈베리파이를 이용하여 스포츠 스마트 고글 구현해보기
+# 라즈베리파이를 이용하여 스포츠 스마트 고글 구현해보기
 
 ## Introduction
 * 자전거를 타는 라이더나 마라톤을 하는 러너들 체력의 한계치에서 주위의 다른 이들과 경쟁을 한다.
@@ -11,6 +11,7 @@
 * 측정한 거리를 바탕으로 충돌을 방지하기 위해 소리(Buzzer)를 제공
 * 카메라를 이용하여 사물을 인식
 * 인식한 사물을 스피커를 통해 음성 안내
+
 ![image](https://github.com/YoungWoon-Go/OSS_project/assets/144092472/fa77f2cd-0df5-4759-971d-76dcc207f814)
 
 
