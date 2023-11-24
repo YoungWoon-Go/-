@@ -6,7 +6,6 @@
 * 현재 상용화 되어 있는 스마트 워치의 경우 운동 중에 시선을 이동시키기 때문에 경기력과 안전에 영향을 끼침
 * 이를 대신할 보조 감각으로 스마트 고글을 고안
 
-![image](https://github.com/YoungWoon-Go/OSS_project/assets/144092472/42aa0f3f-78d3-49ac-8b5e-456b489bb75b)
 
 
 ## Concept
