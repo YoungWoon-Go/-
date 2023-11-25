@@ -70,7 +70,7 @@ try:
     while True:
         # 왼쪽 초음파 센서로 거리 측정
         distance_left = measure_distance(TRIGGER_LEFT, ECHO_LEFT)
-        # 부저 울리기
+        # 왼쪽 부저 울리기
         play_buzzer(LEFT_BUZZER_PIN, distance_left)
 
         # 가운데 초음파 센서로 거리 측정
@@ -81,7 +81,7 @@ try:
 
         # 오른쪽 초음파 센서로 거리 측정
         distance_right = measure_distance(TRIGGER_RIGHT, ECHO_RIGHT)
-        # 부저 울리기
+        # 오른쪽 부저 울리기
         play_buzzer(RIGHT_BUZZER_PIN, distance_right)
 
         # 측정 주기 간격
