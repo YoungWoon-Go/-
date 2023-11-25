@@ -19,7 +19,9 @@
 
 ## Result
 
-![image](https://github.com/YoungWoon-Go/OSS_project/assets/144092472/9a53e88b-d2b3-4d3b-9614-f3470b1a05e5)
+
+![image](https://github.com/YoungWoon-Go/OSS_project/assets/144092472/ca0bfbd0-d041-4f17-9f08-5192dead4661)
+
 * RED: 초음파 커리 측정 센서
 * BLUE: 피에조 부저 모듈
 
