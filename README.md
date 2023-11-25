@@ -16,4 +16,10 @@
 
 ![image](https://github.com/YoungWoon-Go/OSS_project/assets/144092472/fa77f2cd-0df5-4759-971d-76dcc207f814)
 
+## Result
 
+## References
+* 초음파 거리센서 작동 코드
+* Passive 부저 작동 코드
+* SSH 접속 코드
+* 찾아보고 출처 넣을 것
