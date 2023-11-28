@@ -23,7 +23,8 @@
 * 체력에 따라 저하되는 시각 인지 기능을 대신 할 라즈베리파이 카메라 모듈을 사용
 * 사물을 인식하여 해당 객체가 무엇인지 음성으로 출력하여 안내
 
-  [image](https://github.com/YoungWoon-Go/OSS_project/assets/144092472/ca0bfbd0-d041-4f17-9f08-5192dead4661)
+![스크린샷 2023-11-25 오후 3 44 30](https://github.com/YoungWoon-Go/OSS_project/assets/144092472/7e25a499-70c0-4764-949a-06651f2559ac)
+
   * RED: 초음파 커리 측정 센서
   * BLUE: 피에조 부저 모듈
 
@@ -31,6 +32,18 @@
 ### 초음파 센서와 부저
 
 ### 카메라와 음성 안내
+![image](https://github.com/YoungWoon-Go/OSS_project/assets/144092472/6498b4e4-b209-4694-ad60-e01316eac236)
+![image](https://github.com/YoungWoon-Go/OSS_project/assets/144092472/5d7400d0-88ee-4fd6-abb9-605acf522cf1)
+<img width="791" alt="스크린샷 2023-11-28 오후 10 47 54" src="https://github.com/YoungWoon-Go/OSS_project/assets/144092472/e863945d-881f-4c67-a3a2-f1251a56b1a0">
+
+![image](https://github.com/YoungWoon-Go/OSS_project/assets/144092472/d2d42765-a37c-494f-803a-0f39678f1458)
+<img width="791" alt="스크린샷 2023-11-28 오후 10 49 14" src="https://github.com/YoungWoon-Go/OSS_project/assets/144092472/d7ad32e0-3070-4e35-a8b6-dd9248a037f1">
+
+![image](https://github.com/YoungWoon-Go/OSS_project/assets/144092472/b4cd4eb0-54a4-429b-9303-8c170b099fe3)
+<img width="839" alt="스크린샷 2023-11-28 오후 10 50 29" src="https://github.com/YoungWoon-Go/OSS_project/assets/144092472/00a82631-d92a-4a82-b94f-0c4f737fbd03">
+
+
+
 
 
 ## References
