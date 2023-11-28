@@ -1,52 +1,33 @@
-import RPi.GPIO as GPIO
-import time
+#include <wiringPi.h>
+#include <unistd.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdint.h>
+#include <math.h>
+#include <sys/time.h>   // <sys/time.h> 헤더 파일 추가
+#include <softTone.h>
 
-# 왼쪽 초음파
-TRIGGER_LEFT = 27
-ECHO_LEFT = 28
 
-# 가운데 초음파
-TRIGGER_MIDDLE = 10
-ECHO_MIDDLE = 11
+// 왼쪽 초음파
+#define TRIGGER_LEFT 27
+#define ECHO_LEFT 28
+// 가운데 초음파
+#define TRIGGER_MIDDLE 10
+#define ECHO_MIDDLE 11
+// 오른쪽 초음파
+#define TRIGGER_RIGHT 15
+#define ECHO_RIGHT 16
 
-# 오른쪽 초음파
-TRIGGER_RIGHT = 15
-ECHO_RIGHT = 16
+// buzzer 왼쪽, 오른쪽
+#define LEFT_BUZZER_PIN 30
+#define RIGHT_BUZZER_PIN 8
 
-# 부저(왼쪽, 오른쪽)
-LEFT_BUZZER_PIN = 30
-RIGHT_BUZZER_PIN = 8
+// 40cm 이내부터 buzzer 작동
+#define TRIGGER_THRESHOLD 40
 
-# 40cm일 때 부저 작동
-DISTANCE_THRESHOLD = 40
-
-# GPIO 설정
-GPIO.setmode(GPIO.BCM)
-GPIO.setup(TRIGGER_LEFT, GPIO.OUT)
-GPIO.setup(ECHO_LEFT, GPIO.IN)
-GPIO.setup(TRIGGER_MIDDLE, GPIO.OUT)
-GPIO.setup(ECHO_MIDDLE, GPIO.IN)
-GPIO.setup(TRIGGER_RIGHT, GPIO.OUT)
-GPIO.setup(ECHO_RIGHT, GPIO.IN)
-GPIO.setup(LEFT_BUZZER_PIN, GPIO.OUT)
-GPIO.setup(RIGHT_BUZZER_PIN, GPIO.OUT)
-
-# 거리에 따라 delay (가까울수록 빨리) -> 이 함수를 사용하는 순간 부저 작동X
-def delay_by_distance(distance):
-    delay_time = int(distance / 100)
-    time.sleep(delay_time / 1000.0)  # 초 단위로 변환
-
-try:
-    while True:
-        # 각 초음파 센서로 거리 측정
-        # (여기에 해당하는 부분을 센서와의 상호 작용을 통해 작성해야 함)
-
-        # 거리에 따라 부저 작동 여부 판단
-        # (여기에 해당하는 부분을 거리에 따라 부저를 작동하도록 작성해야 함)
-
-        # 측정 주기 간격
-        time.sleep(1)
-
-except KeyboardInterrupt:
-    # 프로그램 종료 시 GPIO 정리
-    GPIO.cleanup()
+// 거리에 따라 delay (가까울수록 빨리) -> 이 함수를 사용하는 순간 부저 작동X
+void delayByDistance(double distance)
+{
+    int delayTime = (int)distance / 100;
+    delay(delayTime);
+}
