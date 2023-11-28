@@ -27,7 +27,7 @@
 
 
 ## References
-* 초음파 거리센서 작동 코드
-* Passive 부저 작동 코드
-* SSH 접속 코드
-* 찾아보고 출처 넣을 것
+* https://andjjip.tistory.com/242
+* https://m.blog.naver.com/rldhkstopic/221516784267
+* https://m.blog.naver.com/roboholic84/221623436924
+* 
