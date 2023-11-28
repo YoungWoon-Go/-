@@ -42,9 +42,10 @@ https://github.com/YoungWoon-Go/OSS_project/assets/144092472/9bfed4c2-ca12-4fa8-
 <img width="791" alt="스크린샷 2023-11-28 오후 10 47 54" src="https://github.com/YoungWoon-Go/OSS_project/assets/144092472/e863945d-881f-4c67-a3a2-f1251a56b1a0">
 
 ![image](https://github.com/YoungWoon-Go/OSS_project/assets/144092472/d2d42765-a37c-494f-803a-0f39678f1458)
+
 <img width="791" alt="스크린샷 2023-11-28 오후 10 49 14" src="https://github.com/YoungWoon-Go/OSS_project/assets/144092472/d7ad32e0-3070-4e35-a8b6-dd9248a037f1">
 
-![image](https://github.com/YoungWoon-Go/OSS_project/assets/144092472/b4cd4eb0-54a4-429b-9303-8c170b099fe3)
+![image](https://github.com/YoungWoon-Go/sports-smart-goggles-using-raspberry-pie/assets/144092472/87fc6ab9-f555-4cd2-8020-d28667ca000f)
 <img width="839" alt="스크린샷 2023-11-28 오후 10 50 29" src="https://github.com/YoungWoon-Go/OSS_project/assets/144092472/00a82631-d92a-4a82-b94f-0c4f737fbd03">
 
 
