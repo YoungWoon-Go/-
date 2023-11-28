@@ -20,8 +20,8 @@
 ## Description
 * 초음파 센서 3개를 왼쪽, 오른쪽, 가운데에 위치하여 각각 거리를 측정하도록 함
 * 사물이 가까워질수록 passive buzzer 2개에서 소리가 빨라짐
-* 체력에 따라 저하되는 시각 인지 기능을 대신 할 라즈베리파이 카메라 모듈을 사용
-* 사물을 인식하여 해당 객체가 무엇인지 음성으로 출력하여 안내
+* 체력에 따라 저하되는 시각 인지 기능을 대신 할 라즈베리파이 카메라 모듈을 사용 -> Googld Cloud Vision API
+* 사물을 인식하여 해당 객체가 무엇인지 음성으로 출력하여 안내 -> Google Translate를 이용한 TTS 기능 (gTTS)
 
 ![스크린샷 2023-11-25 오후 3 44 30](https://github.com/YoungWoon-Go/OSS_project/assets/144092472/7e25a499-70c0-4764-949a-06651f2559ac)
 
@@ -30,6 +30,11 @@
 
 ## Result
 ### 초음파 센서와 부저
+
+
+https://github.com/YoungWoon-Go/OSS_project/assets/144092472/9bfed4c2-ca12-4fa8-ae06-918ab32e483b
+
+
 
 ### 카메라와 음성 안내
 ![image](https://github.com/YoungWoon-Go/OSS_project/assets/144092472/6498b4e4-b209-4694-ad60-e01316eac236)
