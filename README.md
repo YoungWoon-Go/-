@@ -53,7 +53,7 @@
 * 사물이 가까워질수록 passive buzzer 2개에서 소리가 빨라짐
 
   ![스크린샷 2023-11-25 오후 3 44 30](https://github.com/YoungWoon-Go/OSS_project/assets/144092472/7e25a499-70c0-4764-949a-06651f2559ac)
-  * RED: 초음파 커리 측정 센서
+  * RED: 초음파 거리 측정 센서
   * BLUE: 피에조 부저 모듈
 
 
