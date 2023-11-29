@@ -45,15 +45,21 @@
 
 
 ## Description
+
+### 장애물 감지 및 부저 알림
 * 초음파 센서 3개를 왼쪽, 오른쪽, 가운데에 위치하여 각각 거리를 측정하도록 함
 * 사물이 가까워질수록 passive buzzer 2개에서 소리가 빨라짐
-* 체력에 따라 저하되는 시각 인지 기능을 대신 할 라즈베리파이 카메라 모듈을 사용 -> Googld Cloud Vision API를 활용한 사물인식
-* 사물을 인식하여 해당 객체가 무엇인지에 대한 정보를 바탕으로 음성으로 출력하여 안내 -> Google Translate를 이용한 TTS 기능 (gTTS) (스피커 )
 
-![스크린샷 2023-11-25 오후 3 44 30](https://github.com/YoungWoon-Go/OSS_project/assets/144092472/7e25a499-70c0-4764-949a-06651f2559ac)
+  ![스크린샷 2023-11-25 오후 3 44 30](https://github.com/YoungWoon-Go/OSS_project/assets/144092472/7e25a499-70c0-4764-949a-06651f2559ac)
+* RED: 초음파 커리 측정 센서
+* BLUE: 피에조 부저 모듈
 
-  * RED: 초음파 커리 측정 센서
-  * BLUE: 피에조 부저 모듈
+
+
+### 카메라를 통해 사물을 인식하고 알림
+* 체력에 따라 저하되는 시각 인지 기능을 대신하기 위해 라즈베리파이 카메라 모듈을 사용하여 Google Cloud Vision API를 활용한다. Google Cloud Vision API란 구글에서 제공해주는 머신러닝 기반의 이미지 분석 API이다.
+* 사물을 인식하여 해당 객체가 무엇인지에 대한 정보를 바탕으로 음성으로 출력하여 안내하기 위해서는 텍스트를 음성으로 변환하는 파이썬 라이브러리인 Google의 Text-to-Speech API인 gTTS를 사용한다.
+
 
 ## Result
 ### 초음파 센서와 부저
