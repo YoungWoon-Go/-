@@ -15,7 +15,15 @@
 * 카메라를 이용하여 사물을 인식
 * 인식한 사물을 스피커를 통해 음성 안내
 
-![image](https://github.com/YoungWoon-Go/OSS_project/assets/144092472/fa77f2cd-0df5-4759-971d-76dcc207f814)
+
+
+
+
+## Estimated result design
+
+![image](https://github.com/YoungWoon-Go/sports-smart-goggles-using-raspberry-pie/assets/144092472/54dc556d-42d0-4d4a-9ae5-c9f0ff96bbfe)
+
+
 
 ## Tools used
 
@@ -46,6 +54,8 @@
  
 
 
+
+
 ## Description
 
 ### 장애물 감지 및 부저 알림
@@ -61,6 +71,9 @@
 ### 카메라를 통해 사물을 인식하고 알림
 * 체력에 따라 저하되는 시각 인지 기능을 대신하기 위해 라즈베리파이 카메라 모듈을 사용하여 Google Cloud Vision API를 활용한다. Google Cloud Vision API란 구글에서 제공해주는 머신러닝 기반의 이미지 분석 API이다.
 * 사물을 인식하여 해당 객체가 무엇인지에 대한 정보를 바탕으로 음성으로 출력하여 안내하기 위해서는 텍스트를 음성으로 변환하는 파이썬 라이브러리인 Google의 Text-to-Speech API인 gTTS를 사용한다.
+
+
+
 
 
 ## Result
