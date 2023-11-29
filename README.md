@@ -17,6 +17,33 @@
 
 ![image](https://github.com/YoungWoon-Go/OSS_project/assets/144092472/fa77f2cd-0df5-4759-971d-76dcc207f814)
 
+## Tools used
+
+
+
+* Rasberry Pi 3
+
+![image](https://github.com/YoungWoon-Go/sports-smart-goggles-using-raspberry-pie/assets/144092472/23b80b5f-567d-4713-8ce5-7229feedeb4b)
+
+
+* 초음파 거리 측정 센서 X3
+
+![image](https://github.com/YoungWoon-Go/sports-smart-goggles-using-raspberry-pie/assets/144092472/e54c9e97-8f3e-4835-990f-0a6d55693958)
+
+
+* Passive Buzzer X2
+
+![image](https://github.com/YoungWoon-Go/sports-smart-goggles-using-raspberry-pie/assets/144092472/9a832b32-9275-4ff1-acad-ae2c8c2b71e4)
+
+
+* Pi Camera
+
+![image](https://github.com/YoungWoon-Go/sports-smart-goggles-using-raspberry-pie/assets/144092472/092f0018-2c5a-43cb-acb9-d8dfac1a0f4f)
+
+
+ 
+
+
 ## Description
 * 초음파 센서 3개를 왼쪽, 오른쪽, 가운데에 위치하여 각각 거리를 측정하도록 함
 * 사물이 가까워질수록 passive buzzer 2개에서 소리가 빨라짐
