@@ -23,22 +23,24 @@
 
 * Rasberry Pi 3
 
-![image](https://github.com/YoungWoon-Go/sports-smart-goggles-using-raspberry-pie/assets/144092472/23b80b5f-567d-4713-8ce5-7229feedeb4b)
+![image](https://github.com/YoungWoon-Go/sports-smart-goggles-using-raspberry-pie/assets/144092472/51283e18-b8b3-4678-8dc3-f121c378cc27)
 
 
 * 초음파 거리 측정 센서 X3
 
-![image](https://github.com/YoungWoon-Go/sports-smart-goggles-using-raspberry-pie/assets/144092472/e54c9e97-8f3e-4835-990f-0a6d55693958)
+![image](https://github.com/YoungWoon-Go/sports-smart-goggles-using-raspberry-pie/assets/144092472/6cfdf3fb-75f5-4317-bb1b-597f2004f854)
+
 
 
 * Passive Buzzer X2
 
-![image](https://github.com/YoungWoon-Go/sports-smart-goggles-using-raspberry-pie/assets/144092472/9a832b32-9275-4ff1-acad-ae2c8c2b71e4)
+![image](https://github.com/YoungWoon-Go/sports-smart-goggles-using-raspberry-pie/assets/144092472/9eec9001-aa38-4640-8ffc-f0d21bd8558a)
 
 
 * Pi Camera
 
-![image](https://github.com/YoungWoon-Go/sports-smart-goggles-using-raspberry-pie/assets/144092472/092f0018-2c5a-43cb-acb9-d8dfac1a0f4f)
+![image](https://github.com/YoungWoon-Go/sports-smart-goggles-using-raspberry-pie/assets/144092472/db4a1d04-6869-46e6-977e-03fa46de12b4)
+
 
 
  
