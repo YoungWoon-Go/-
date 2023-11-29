@@ -1,3 +1,4 @@
+// test1.c 코드에 함수를 사용하여 디벨롭
 #include <wiringPi.h>
 #include <stdio.h>
 #include <stdlib.h>
