@@ -110,3 +110,4 @@ https://github.com/YoungWoon-Go/OSS_project/assets/144092472/9bfed4c2-ca12-4fa8-
   (Camera software Introducing the Raspberry Pi Cameras)
 * https://www.dexterindustries.com/howto/use-google-cloud-vision-on-the-raspberry-pi/
   (Use Google Cloud Vision On the Raspberry Pi and GoPiGo)
+* https://neosarchizo.gitbooks.io/raspberrypiforsejonguniv/content/chapter4.html (Pi camera)
