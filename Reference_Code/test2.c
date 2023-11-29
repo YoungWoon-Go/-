@@ -1,3 +1,4 @@
+//초음파 센서만 성공
 #include <wiringPi.h>
 #include <unistd.h>
 #include <stdio.h>
