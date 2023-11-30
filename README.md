@@ -69,6 +69,105 @@
   * RED: 초음파 거리 측정 센서
   * BLUE: 피에조 부저 모듈
 
+```c
+ int main(void)
+ {
+	 /* -----set up----- */
+	
+     if (wiringPiSetup() == -1) {
+         return 1;
+     }
+	
+	 if (softToneCreate(LEFT_BUZZER_PIN) != 0 || softToneCreate(RIGHT_BUZZER_PIN) != 0) {
+         return 1;
+     }
+	
+     pinMode(TRIGGER_LEFT, OUTPUT);
+     pinMode(ECHO_LEFT, INPUT);
+     pinMode(TRIGGER_MIDDLE, OUTPUT);
+     pinMode(ECHO_MIDDLE, INPUT);
+     pinMode(TRIGGER_RIGHT, OUTPUT);
+     pinMode(ECHO_RIGHT, INPUT);
+```
+ ➞ 초기 세팅
+
+  
+ 
+```c
+ #include <wiringPi.h>
+ #include <unistd.h>
+ #include <stdio.h>
+ #include <stdlib.h>
+ #include <stdint.h>
+ #include <math.h>
+ #include <sys/time.h>   // <sys/time.h> 헤더 파일 추가
+ #include <softTone.h>
+
+
+ // 왼쪽 초음파
+ #define TRIGGER_LEFT 27
+ #define ECHO_LEFT 28
+ // 가운데 초음파
+ #define TRIGGER_MIDDLE 10
+ #define ECHO_MIDDLE 11
+ // 오른쪽 초음파
+ #define TRIGGER_RIGHT 15
+ #define ECHO_RIGHT 16 
+
+ // buzzer 왼쪽, 오른쪽
+ #define LEFT_BUZZER_PIN 30
+ #define RIGHT_BUZZER_PIN 8
+
+ // 40cm 이내부터 buzzer 작동
+ #define TRIGGER_THRESHOLD 40 
+
+ // 거리에 따라 delay (가까울수록 빨리) -> 이 함수를 사용하는 순간 부저 작동X
+ void delayByDistance(double distance)
+ {
+     int delayTime = (int)distance / 100;
+     delay(delayTime);
+ }
+```
+ ➞ 필요한 라이브러리 선언 및 핀 번호 지정
+
+
+
+ ```c
+ // 부저 울리기
+ void playBuzzer(int buzzerPin, double distance) {
+     int frequency;
+     int delaytime;
+     // int delaytime = (int)distance/100;
+
+     if (distance <= 40 && distance > 25) {
+         frequency = 700;
+         delaytime = 300;
+     } else if (distance <= 25 && distance > 10) {
+         frequency = 1000;
+         delaytime = 150;
+     } else if (distance <= 10) {
+         frequency = 3000;
+         delaytime = 50;
+     } else {
+         frequency = 0;
+         delaytime = 0;
+     }
+
+	 // softToneWrite(gpio pin num, 주파수 톤(숫자))
+	
+     softToneWrite(buzzerPin, frequency);
+     delay(delaytime);	// 소리 길이
+     //delayByDistance(distance);
+    
+     softToneWrite(buzzerPin, 0);
+     delay(delaytime);
+     //delayByDistance(distance);
+ }
+
+ ➞ 거리에 따라 소리의 높낮이와 빈도 수를 조절하여 passive buzzer을 울리는 코드
+
+
+
 
 
 ### 카메라를 통해 사물을 인식하고 알림
