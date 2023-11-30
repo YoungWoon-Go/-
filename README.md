@@ -16,6 +16,9 @@
 * 인식한 사물을 스피커를 통해 음성 안내
 
 
+<img width="949" alt="스크린샷 2023-11-30 오후 4 09 48" src="https://github.com/YoungWoon-Go/sports-smart-goggles-using-raspberry-pie/assets/144092472/28ecdd1e-e2bb-4aab-bf53-c6cc4147d05d">
+
+
 
 
 
