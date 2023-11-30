@@ -372,14 +372,34 @@ if __name__ == '__main__':
 ## Result
 ### 초음파 센서와 부저
 
+움직이는 물체에 대한 거리를 초음파 센서로 감지하여 거리에 따라 부저음의 발생 빈도와 높낮이를 조절하는 모습을 볼 수 있다.
+
 🔊🔊🔊
 
 
-https://github.com/YoungWoon-Go/OSS_project/assets/144092472/9bfed4c2-ca12-4fa8-ae06-918ab32e483b
+https://github.com/YoungWoon-Go/sports-smart-goggles-using-raspberry-pie/assets/144092472/2b8a5c1a-8525-4d12-8a1b-b99ca1f1e815
 
 
+
+
+https://github.com/YoungWoon-Go/sports-smart-goggles-using-raspberry-pie/assets/144092472/c9036cc0-6159-4d43-8da1-12b58ac2d317
+
+
+
+
+---
 
 ### 카메라와 음성 안내
+
+#### 카메라를 통한 감지와 인식 과정
+
+![KakaoTalk_Photo_2023-11-30-20-39-48 001](https://github.com/YoungWoon-Go/sports-smart-goggles-using-raspberry-pie/assets/144092472/36df3f4c-7edb-4ab3-bd7a-4714a32d95e5)
+![KakaoTalk_Photo_2023-11-30-20-39-49 002](https://github.com/YoungWoon-Go/sports-smart-goggles-using-raspberry-pie/assets/144092472/54f98ff3-f07c-4ec9-9546-4210def88203)
+![KakaoTalk_Photo_2023-11-30-20-39-49 003](https://github.com/YoungWoon-Go/sports-smart-goggles-using-raspberry-pie/assets/144092472/3c6ef30f-a0f1-4387-b747-cf103bc3bcad)
+
+
+객체 인식 결과를 나타내는 json 파일
+
 ![image](https://github.com/YoungWoon-Go/OSS_project/assets/144092472/6498b4e4-b209-4694-ad60-e01316eac236)
 ![image](https://github.com/YoungWoon-Go/OSS_project/assets/144092472/5d7400d0-88ee-4fd6-abb9-605acf522cf1)
 <img width="791" alt="스크린샷 2023-11-28 오후 10 47 54" src="https://github.com/YoungWoon-Go/OSS_project/assets/144092472/e863945d-881f-4c67-a3a2-f1251a56b1a0">
@@ -392,7 +412,9 @@ https://github.com/YoungWoon-Go/OSS_project/assets/144092472/9bfed4c2-ca12-4fa8-
 <img width="839" alt="스크린샷 2023-11-28 오후 10 50 29" src="https://github.com/YoungWoon-Go/OSS_project/assets/144092472/00a82631-d92a-4a82-b94f-0c4f737fbd03">
 
 
-
+## 아쉬웠던 점
+* 실질적인 고글의 형태로 구현해내지 못 한것이 가장 아쉬웠다.
+* 센서의 경우 본인의 소유가 아닌 대여한 부품이기 때문에 결과를 담아낼 수 있는 영상과 사진을 촬영하는데에 있어 원활하지 않았다. 그래서 결과를 보여주기에 충분한 자료를 제시하지 못 한 것이 부족한 점이라고 판단이 된다.
 
 
 ## References
