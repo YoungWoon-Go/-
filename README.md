@@ -68,9 +68,11 @@
   ![스크린샷 2023-11-25 오후 3 44 30](https://github.com/YoungWoon-Go/OSS_project/assets/144092472/7e25a499-70c0-4764-949a-06651f2559ac)
   * RED: 초음파 거리 측정 센서
   * BLUE: 피에조 부저 모듈
+___
 
+ ➞ 초기 세팅
 ```c
- int main(void)
+	int main(void)
  {
 	 /* -----set up----- */
 	
@@ -89,9 +91,9 @@
      pinMode(TRIGGER_RIGHT, OUTPUT);
      pinMode(ECHO_RIGHT, INPUT);
 ```
- ➞ 초기 세팅
+---
 
-  
+ ➞ 필요한 라이브러리 선언 및 핀 번호 지정
  
 ```c
  #include <wiringPi.h>
@@ -128,13 +130,12 @@
      delay(delayTime);
  }
 ```
- ➞ 필요한 라이브러리 선언 및 핀 번호 지정
-
-
-
+---
+ ➞ 거리에 따라 소리의 높낮이와 빈도 수를 조절하여 passive buzzer을 울리는 코드
+ 
  ```c
  // 부저 울리기
- void playBuzzer(int buzzerPin, double distance) {
+	 void playBuzzer(int buzzerPin, double distance) {
      int frequency;
      int delaytime;
      // int delaytime = (int)distance/100;
@@ -163,8 +164,100 @@
      delay(delaytime);
      //delayByDistance(distance);
  }
+```
+---
 
- ➞ 거리에 따라 소리의 높낮이와 빈도 수를 조절하여 passive buzzer을 울리는 코드
+➞ 초음파 센서로 거리 측정, passive buzzer을 울리기 위한 함수 호출
+```c
+	while(1){
+		/* -----거리 측정----- */
+		
+		// 왼쪽 초음파 센서 측정
+		digitalWrite(TRIGGER_LEFT, LOW);
+		usleep(10);
+		digitalWrite(TRIGGER_LEFT, HIGH);
+		usleep(10);
+		digitalWrite(TRIGGER_LEFT, LOW);
+
+		struct timeval start, stop;
+		while (digitalRead(ECHO_LEFT) == 0) {	// 펄스 발생
+			gettimeofday(&start, NULL);
+		}
+		while (digitalRead(ECHO_LEFT) == 1) {	// 펄스 돌아옴
+			gettimeofday(&stop, NULL);
+		}
+		// 리턴 투 타임 = (end시간 - start시간)
+		double elapsedTime = (stop.tv_sec - start.tv_sec) * 1000000 + (stop.tv_usec - start.tv_usec);
+		// 왼쪽 초음파의 거리 값
+		double distance_left = elapsedTime * (34000.0 / 2.0) / 1000000.0;  // 속도를 cm/us로 변환
+		
+		/* -----부저 발생----- */
+		
+		// 왼쪽 buzzer 울리기
+		playBuzzer(LEFT_BUZZER_PIN, distance_left);
+
+		//sleep(1);
+		//usleep(1000000);  // 1초 대기
+		
+		/* -----거리 측정----- */
+		
+		// 가운데 초음파 센서 측정
+		digitalWrite(TRIGGER_MIDDLE, LOW);
+		usleep(10);
+		digitalWrite(TRIGGER_MIDDLE, HIGH);
+		usleep(10);
+		digitalWrite(TRIGGER_MIDDLE, LOW);
+
+		while (digitalRead(ECHO_MIDDLE) == 0) {
+			gettimeofday(&start, NULL);
+		}
+		while (digitalRead(ECHO_MIDDLE) == 1) {
+			gettimeofday(&stop, NULL);
+		}
+		elapsedTime = (stop.tv_sec - start.tv_sec) * 1000000 + (stop.tv_usec - start.tv_usec);
+		double distance_middle = elapsedTime * (34000.0 / 2.0) / 1000000.0;  // 속도를 cm/us로 변환
+		
+		/* -----부저 발생----- */
+		
+		// 왼쪽, 오른쪽 buzzer 울리기
+		playBuzzer(LEFT_BUZZER_PIN, distance_middle);
+		playBuzzer(RIGHT_BUZZER_PIN, distance_middle);
+
+		/* -----거리 측정----- */
+		
+		// 오른쪽 초음파 센서 측정
+		digitalWrite(TRIGGER_RIGHT, LOW);
+		usleep(10);
+		digitalWrite(TRIGGER_RIGHT, HIGH);
+		usleep(10);
+		digitalWrite(TRIGGER_RIGHT, LOW);
+
+		while (digitalRead(ECHO_RIGHT) == 0) {
+			gettimeofday(&start, NULL);
+		}
+		while (digitalRead(ECHO_RIGHT) == 1) {
+			gettimeofday(&stop, NULL);
+		}
+		elapsedTime = (stop.tv_sec - start.tv_sec) * 1000000 + (stop.tv_usec - start.tv_usec);
+		double distance_right = elapsedTime * (34000.0 / 2.0) / 1000000.0;  // 속도를 cm/us로 변환
+		
+		/* -----부저 발생----- */
+		
+		// 오른쪽 buzzer 울리기
+		playBuzzer(RIGHT_BUZZER_PIN, distance_right);
+
+
+		// 1초마다 거리값 측정 및 갱신
+		sleep(0.05);
+		// 실시간으로 거리 측정 출력
+		printf("-----Distance----- \nLeft: %.2f cm \nMiddle: %.2f cm \nRight: %.2f cm\n\n", distance_left, distance_middle, distance_right);
+
+	}
+
+    
+    return 0;
+}
+```
 
 
 
