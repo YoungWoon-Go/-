@@ -62,13 +62,6 @@
 
 ![image](https://github.com/YoungWoon-Go/sports-smart-goggles-using-raspberry-pie/assets/144092472/db4a1d04-6869-46e6-977e-03fa46de12b4)
 
-
-
- 
-
-
-
-
 ## Description
 
 ### 장애물 감지 및 부저 알림
@@ -294,7 +287,22 @@ ___
 * 체력에 따라 저하되는 시각 인지 기능을 대신하기 위해 라즈베리파이 카메라 모듈을 사용하여 Google Cloud Vision API를 활용한다. Google Cloud Vision API란 구글에서 제공해주는 머신러닝 기반의 이미지 분석 API이다.
 * 사물을 인식하여 해당 객체가 무엇인지에 대한 정보를 바탕으로 음성으로 출력하여 안내하기 위해서는 텍스트를 음성으로 변환하는 파이썬 라이브러리인 Google의 Text-to-Speech API인 gTTS를 사용한다.
 ---
+→ Pi camera test 과정
+* `libcamera-hello -t 0`
+	→ legacy camera NO
+* 'legacy camera YES'
+    
+    "the system should be configured for the legacy camera stack" 오류는 Raspberry Pi에서 카메라 모듈을 사용하기 위해 설정이 필요하다는 의미입니다. 이 오류를 해결하기 위해 다음 단계를 따라야한다:
+    
+    1. 터미널에서 **`sudo raspi-config`** 명령을 실행하여 Raspberry Pi 구성 도구를 연다.
+    2. **`Interfacing Options`**를 선택한다.
+    3. **`Camera`**를 선택한다.
+    4. "Would you like the camera interface to be enabled?"라는 메시지가 나타나면 "Yes"를 선택한다.
+    5. Raspberry Pi를 재부팅한다.
+    
+    이제 시스템은 레거시 카메라 스택을 위해 구성되었다.
 
+---
 → 필요한 라이브러리 선언, Google API 사용
 ```python
  import argparse
