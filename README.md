@@ -1,7 +1,14 @@
 # 라즈베리파이를 활용한 스포츠 스마트 고글 기술 구현
 
 ## Table of contents
-1. [Introduction] (#Introduction)
+1. [Introduction](#Introduction)
+2. [Concept](#Concept)
+3. [Estimated result design](#Estimated-result-design)
+4. [Tools used](#Tools-used)
+5. [Description](#Description)
+6. [Result](#Result)
+7. [아쉬웠던 점](#아쉬웠던-점)
+8. [References](#References)
 
 ## Introduction
 * 자전거를 타는 라이더나 마라톤을 하는 러너들은 체력의 한계치에서 주위의 다른 이들과 경쟁
